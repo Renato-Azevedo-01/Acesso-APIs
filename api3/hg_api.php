@@ -77,5 +77,17 @@ class Hg_api {
             return false;
         }
     }
+
+    function cotacao_dolar_canadense(){
+        $data = $this->request('/finance/quotations');
+        if(!empty($data) && is_array($data['results']['currencies']['CAD'])){
+            $this->error =false;
+            return $data['results']['currencies']['CAD'];
+        }
+        else{
+            $this->error = true;
+            return false;
+        }
+    }
 }
 ?>

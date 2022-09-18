@@ -25,4 +25,8 @@ echo "<br>$euro[name] = $euro[buy] ";
 $foxbit = $hg->cotacao_bitcoin_foxbit();
 
 echo "<br>$foxbit[name] = $foxbit[last] e variação =  $foxbit[variation]";
+
+$dolar_canadense = $hg->cotacao_dolar_canadense();
+
+echo "<br>$dolar_canadense[name] = $dolar_canadense[buy] e variação = $dolar_canadense[variation]";
 ?>
