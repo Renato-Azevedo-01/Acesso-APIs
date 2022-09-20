@@ -1,9 +1,16 @@
 <?php
 require_once './config/config.php';
+require_once './modules/hg_api_location.php';
 require_once './modules/hg_api_weather.php';
 require_once './modules/hg_api_cotacao.php';
 
-$hg_tempo = new Hg_weather(chave_hg_api,cidade);
+$hg_localizacao = new Hg_location(chave_hg_api);
+$cidade = $hg_localizacao->codigo_cidade();
+
+#Se o parêmetro da temperatura for $cidade, pega pela Localização automática acima;
+#Se for cidade (sem o $), pega pela definição do config.php. Neste caso (abaixo) -> automática pelo "IP".
+
+$hg_tempo = new Hg_weather(chave_hg_api,$cidade);
 $hg_cotacao = new Hg_api_cotacao(chave_hg_api);
 
 $tempsp = $hg_tempo->temperatura_sao_paulo();
