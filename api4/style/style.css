@@ -1,0 +1,36 @@
+:root{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+    width:100%;
+}
+
+img{
+    width:130px;
+    margin: 0;
+    padding:0;
+}
+nav {
+    background-color:lightblue;
+    color:white;
+    display:inline;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:100%;
+    margin: auto;
+    border-radius: 10px;
+    }
+
+nav ul li{   
+    display:inline;
+    font-size: 20px;
+    padding:40px;
+  
+    }
