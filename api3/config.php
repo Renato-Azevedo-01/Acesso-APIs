@@ -1,3 +1,3 @@
 <?php
-    define('chave_api', '490c5afe');
+    define('chave_api', 'sua chave');
 ?>
