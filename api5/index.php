@@ -11,13 +11,16 @@
 </body>
 </html>
 <?php
-include 'cabecalho.php';
+require_once 'cabecalho.php';
 
-var_dump($_GET);
+#var_dump($_GET);
+if($_GET){
 
-if (isset($_GET['pagina'])){
-    require_once "pages/" . $_GET['pagina']. ".php";
-}
+    $url = explode('/', $_GET['url']);
+    #echo "<br>$url[1]";
 
-include 'footer.php';
+        require "pages/" . $url[0] . ".php";
+    }
+
+require_once 'footer.php';
 ?>

@@ -1,5 +1,5 @@
 <?php
-require_once './config/config.php';
+require './config/config.php';
 require_once './modules/hg_api_location.php';
 require_once './modules/hg_api_weather.php';
 require_once './modules/hg_api_cotacao.php';
@@ -28,17 +28,24 @@ echo "<div style = 'font-size:15px;background-color:red;color:white'><marquee> T
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='shortcut icon' href='./images/renato4.ico' type='image/x-icon'>
     <title>Teste API</title>  
-    <link rel="stylesheet" href="./style/style1.css">
+    
+    <link rel="stylesheet" type="text/css"  href="./style/style1.css"/>
 </head>
 <body>
-    <div id='container'>
+    <div id="container">
         <img src="./images/renato4a.png" alt="imagem renato">
         <nav>
             <ul>
-                <li><a href="?pagina=home">Home</a></li>
-                <li><a href="?pagina=linguagens">Linguagens</a></li>
-                <li><a href="?pagina=projetos">Projetos</a></li>
-                <li><a href="?pagina=contato">Contato</a></li>
+                <li><a href="home">Home</a></li>
+                <li><a href="linguagens">Linguagens</a>
+                    <ul>
+                            <li>
+                                <a href="linguagens_de_jogos">Linguagens de jogos</a>
+                            </li>
+                    </ul>
+                </li>
+                <li><a href="projetos">Projetos</a></li>
+                <li><a href="contato">Contato</a></li>
             </ul>
         </nav>
     </div>

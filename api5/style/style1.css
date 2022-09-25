@@ -8,19 +8,21 @@
     justify-content:center;
     align-items:center;
     margin: auto;
-    width:100%;
+    width:100%;    
 }
 
+
+
 img{
-    width:130px;
-    margin: 0;
+    width:110px;
+    margin-left: 10px;
     padding:0;
 }
 nav {
     /*background-color:lightblue;*/
     color:white;
     background-color: lightblue;
-    display:inline;
+    display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
@@ -29,22 +31,39 @@ nav {
     border-radius: 10px;
     }
 
-nav ul li {   
-    display:inline;
+nav ul {   
+    display:flex;
+    justify-content:space-between;
     font-size: 20px;
-    padding:40px;
-    
-  
-    }
+  }
+
+nav ul li{
+    display: inline;
+    padding:10px;
+      
+}
+
 
 nav ul li a{   
     
     text-decoration: none;
     color:gray;
-    
-    }
+    padding:10px;
+    margin:10px;
+}
+
 a:hover{
     color: blue;
     
 }
 
+nav ul li ul{
+    display: none;
+    
+}
+
+
+nav ul li ul li.vertical{
+    display:block;
+   
+}
