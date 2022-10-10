@@ -1,19 +1,37 @@
 /*class MobileNavbar{
-    constructor() {}
+    constructor(mobileMenu, navBar, navLinks ) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navBar = document.querySelector(navBar);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
+        this.handleClick = this.handleClick.bind(this);
+    }
 
-    handleClick(){}
+    handleClick(){
+        if (this.mobileMenu) {
+            ()=> {(click), }
+        }
+    }
 
     Animate(){}
 
-    addClickEvent(){}
+    addClickEvent(){
+        $this.mobileMenu.addEventListener('click',  this.handleClick())
+    }
 
-    init(){}
+    init(){
+        if(mobileMenu){
+            addClickEvent();
+        }
+        return this;
+    }
 }
 
-const $mobileNavbar = new MobileNavbar(
-    '.mobile-menu', '.nav-list' , '.nav-list li');
+const mobileNavbar = new MobileNavbar ('.mobile-menu' , '.nav-list' , 'nav-list li');
 
-$mobileNavbar.init();
+mobileNavbar.init();
+
+
 */
 
 class MobileNavbar {
@@ -71,7 +89,7 @@ mobileNavbar.init();
 //      que INCLUIRÁ/RETIRARÁ a Classe ".mostra" que apresenta ou 
 //      oculta o Sub-menu Projetos.
 
-$subMenu = $('ul.nav-list  li a.proj');
+$subMenu = $('ul.nav-list li a.proj');
 
 $subMenu.click(() => {
    $('.nav-list li ul').toggleClass('mostra');

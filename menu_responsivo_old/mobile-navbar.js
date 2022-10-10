@@ -34,7 +34,6 @@ class MobileNavbar {
 
     init () {
         if (this.mobileMenu) {
-
             this.addClickEvent();
         }
         return this;
@@ -52,7 +51,7 @@ mobileNavbar.init();
 //      que INCLUIRÁ/RETIRARÁ a Classe ".mostra" que apresenta ou 
 //      oculta o Sub-menu Projetos.
 
-$subMenu = $('ul.nav-list  li a.loja');
+$subMenu = $('ul.nav-list  li a.proj');
 
 $subMenu.click(function(){
    $('.nav-list li ul').toggleClass('mostra');

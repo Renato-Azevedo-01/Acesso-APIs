@@ -10,7 +10,7 @@ $cidade = $hg_localizacao->codigo_cidade();
 #Se o parêmetro da temperatura for $cidade, pega pela Localização automática acima;
 #Se for cidade (sem o $), pega pela definição do config.php. Neste caso (abaixo) -> automática pelo "IP".
 
-$hg_tempo = new Hg_weather(chave_hg_api,$cidade);
+$hg_tempo = new Hg_weather(chave_hg_api,cidade);
 $hg_cotacao = new Hg_api_cotacao(chave_hg_api);
 
 $tempsp = $hg_tempo->temperatura_sao_paulo();
@@ -30,7 +30,7 @@ echo "<div style = 'font-size:15px;background-color:red;color:white'><marquee> T
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo - Documentado</title>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
     <!--ICONES-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--JQUERY-->
@@ -40,7 +40,7 @@ echo "<div style = 'font-size:15px;background-color:red;color:white'><marquee> T
 <body>
     <header>
         <nav>
-            <div><img class="foto" src="./images/renato4a.png" alt="imagem renato"></div>
+            <img style="max-width:100px" src="./images/renato4a.png" alt="imagem renato">
             <div class="mobile-menu">
                 <div class = "line1"></div>
                 <div class = "line2"></div>

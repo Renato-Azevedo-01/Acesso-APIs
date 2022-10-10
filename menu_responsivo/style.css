@@ -3,12 +3,6 @@
     padding:0;
 } 
 
-body{
-    background: url(moon1.jpg) no-repeat center center;
-    background-size: cover;
-    height:90vh;
-   
-}
 a {
     color: white  ;
     text-decoration: none;
@@ -20,39 +14,43 @@ a:hover{
     opacity: 0.7;
 }
 
+logo {
+    font-size: 24px;    
+   /* text-transform: uppercase; */
+
+}
+
+a.logo {
+    text-transform: uppercase; 
+    letter-spacing:4px;
+    color:red;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  Arial, Helvetica, sans-serif;
-    background: #000000;
+    background: #23232e;
     height: 15vh;
-    width:100%;
-}
-
-div img.foto{
-    width:90px;
+    width:auto;
 }
 
 main {
     background: url(moon1.jpg) no-repeat center center;
     background-size: cover;
-    height:92vh;
-    z-index: -10;    
+    height:92vh;    
 }
 
 .nav-list{
     list-style: none; /* para sumir com os pontos à esquerda da lista */
     display: flex;    /* para que a lista fique alinhada horizontalmente, devido ao espaço */
-    padding-top:50px;
-    margin-top:0;
-    
 }
 
 /* Ajuste de altura do menu  A4*/
 .nav-list li{
     letter-spacing:3px;
-    margin-left: 35px;    
+    margin-left: 35x;    
     padding-top: 70px;
 }
 
@@ -97,7 +95,6 @@ span.material-icons.seta1{
     left:0;
     vertical-align: middle;
     transition: 0.3s;
-    
 }
 
 .material-icons.seta1.gira{
@@ -114,17 +111,16 @@ span.material-icons.seta1{
 
     .nav-list{
         position: absolute;
-        top:13vh;
+        top:15vh;
         right:0px;
         width: 50vw;
-        height:66vh;
-        background:#000000;
+        height:85vh;
+        background:#23232e;
         flex-direction: column;
         align-items: center;
-        justify-content:space-around;
+        justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        padding-top: 0px;
     }
     
      /* sub-menu  A5*/
@@ -189,9 +185,20 @@ span.material-icons.seta1{
     }
 }
 
+@keyframes navLinkFadeY{
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
 .mobile-menu.active .line1{
     transform: rotate(45deg) translate(5px,8px);
-    /*background-color:yellow; */
+    background-color:yellow;
 }
 
 .mobile-menu.active .line2{
@@ -203,9 +210,5 @@ span.material-icons.seta1{
 }
 
 
-/*Home*/
-div.home-container{
-    background-color: blueviolet;
-    height: 30vh;
-}
+
 
