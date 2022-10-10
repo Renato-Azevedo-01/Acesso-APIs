@@ -1,4 +1,4 @@
 <?php 
-define('chave_hg_api','490c5afe');
+define('chave_hg_api','sua chave');
 define('cidade', 455828);
 ?>
