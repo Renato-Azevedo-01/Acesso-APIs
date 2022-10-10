@@ -13,14 +13,16 @@ $cidade = $hg_localizacao->codigo_cidade();
 $hg_tempo = new Hg_weather(chave_hg_api,$cidade);
 $hg_cotacao = new Hg_api_cotacao(chave_hg_api);
 
-$tempsp = $hg_tempo->temperatura();
+$temp = $hg_tempo->temperatura();
 $vartemp = $hg_tempo->max_min();
 
 $dolar = $hg_cotacao->cotacao_dolar();
 
 $euro = $hg_cotacao->cotacao_euro();
 
-echo "<div style = 'font-size:15px;background-color:red;color:white'><marquee> Temperatura: $tempsp[city_name] : $tempsp[temp]°C | Máx: $vartemp[max] | Min: $vartemp[min] | USD buy =  $dolar[buy] | USD sell =  $dolar[sell] (var $dolar[variation]) |  EUR buy = $euro[buy] | sell = $euro[sell] (var $euro[variation])</marquee></div>";
+echo "<div style = 'font-size:15px;background-color:red;color:white'><marquee> Temperatura: $temp[city_name] : $temp[temp]°C | Máx: $vartemp[max] | Min: $vartemp[min] | USD buy =  $dolar[buy] | USD sell =  $dolar[sell] ($dolar[variation]) |  EUR buy = $euro[buy] | sell = $euro[sell] ($euro[variation])</marquee></div>";
+
+
 ?>
 
 <!DOCTYPE html>
@@ -48,24 +50,24 @@ echo "<div style = 'font-size:15px;background-color:red;color:white'><marquee> T
                 <div class = "line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Linguagens</a></li>
+                <li><a href="home">Home</a></li>
+                <li><a href="linguagens">Linguagens</a></li>
                 <li><a href="#" class="loja">Projetos<span    class="material-icons seta1">
                     arrow_drop_down</span></a>
                     <ul class="itensProj">
-                        <li><a href="#">PHP</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">JS</a></li>
-                        <li><a href="#">React</a></li>
-                        <li><a href="#">Vue.js</a></li>
+                        <li><a href="php">PHP</a></li>
+                        <li><a href="python">Python</a></li>
+                        <li><a href="js">JS</a></li>
+                        <li><a href="react">React</a></li>
+                        <li><a href="vue">Vue.js</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
-    
+
+        
 </body>
 <script src="mobile-navbar.js"></script>
 </html>

@@ -37,10 +37,11 @@ nav {
     width:auto;
 }
 
-main {
-    background: url(moon1.jpg) no-repeat center center;
+body {
+    background: url(moon1.jpg) no-repeat center center ;
     background-size: cover;
-    height:92vh;    
+    height:100vh;    
+    
 }
 
 .nav-list{

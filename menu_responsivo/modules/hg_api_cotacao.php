@@ -91,3 +91,4 @@ class Hg_api_cotacao {
     }
 }
 ?>
+
