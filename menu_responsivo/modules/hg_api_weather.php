@@ -47,7 +47,7 @@ require_once './config/config.php';
             }
         }
 
-        function temperatura_sao_paulo(){
+        function temperatura(){
             $data = $this->request('/weather', cidade);
             if(!empty($data) && is_array($data['results'])){
                 $this->error = false;
