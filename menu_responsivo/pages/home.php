@@ -11,7 +11,7 @@
     <div class="home-container">
         <?php
             echo "<h1>Home</h1>";
-            echo "<h3>Sou do Rio de Janeiro e, há 14 anos, moro em São Paulo. Sou Um bom portfólio fica ainda melhor quando você conta um pouco sobre a sua história, suas experências anteriores e que tipo de profissional você é para trabalhar. Inclua uma página “sobre” em seu portfólio, fale sobre você e não esqueça de colocar suas informações de contato. Invista tempo e capriche em seu portfólio.</h3>"
+            echo "<h3>Sou do Rio de Janeiro </h3>"
         ?>
     </div>
 </body>
